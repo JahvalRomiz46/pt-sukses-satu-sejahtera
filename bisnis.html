@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
 
-    <title>Proyek - PT Sukses Satu Sejahtera</title>
+    <title>Bisnis - PT Sukses Satu Sejahtera</title>
     <link rel="icon" type="image/png" href="assets/images/s1s-logo.png" />
 
     <!-- Bootstrap core CSS -->
@@ -128,7 +128,7 @@
     <header id="#top">
       <nav class="main-navigation navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <a class="navbar-brand" href="tentang.html"
+          <a class="navbar-brand" href="about.html"
             ><img src="assets/images/white-logo.png" alt=""
           /></a>
           <button
@@ -148,10 +148,10 @@
                 <a class="nav-link" href="tentang.html">Tentang</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="bisnis.html">Bisnis</a>
+                <a class="nav-link active" href="bisnis.html">Bisnis</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="proyek.html">Proyek</a>
+                <a class="nav-link" href="proyek.html">Proyek</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="galeri.html">Galeri</a>
@@ -170,26 +170,83 @@
         <div class="row">
           <div class="col-lg-6 offset-lg-3">
             <div class="header-text">
-              <h2><em>Explore</em> Our Work</h2>
+              <h2><em>Bisnis</em> Kami</h2>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- CONTENT -->
+    <section class="bisnis">
+      <div class="heavy-equipment">
+        <h2 class="header-title">Heavy Equipment</h2>
+        <div class="product-row">
+          <div class="HE">
+            <a href="excavator-pc75.html">
+              <div class="card">
+                <img src="assets/images/Exca pc.75.jpg" alt="" />
+                <div class="overlay">
+                  <span>Excavator PC 75</span>
+                </div>
+              </div>
+            </a>
+            <p>Excavator PC 75</p>
+          </div>
 
-    <!-- END -->
+          <div class="HE" id="exca50">
+            <a href="excavator-pc50.html">
+              <div class="card">
+                <img src="assets/images/Exca pc.50.jpg" alt="" />
+                <div class="overlay">
+                  <span>Excavator PC.50</span>
+                </div>
+              </div>
+            </a>
+            <p>Excavator PC 50</p>
+          </div>
+
+          <div class="HE">
+            <a href="excavator-pc50.html">
+              <div class="card">
+                <img src="assets/images/Forklift 3T.jpg" alt="" />
+                <div class="overlay">
+                  <span>Forklift 3T</span>
+                </div>
+              </div>
+            </a>
+            <p>Forklift 3T</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="supply-man-power">
+        <h2 class="header-title">Supply Man Power</h2>
+
+        <div class="product-row">
+          <div class="HE">
+            <a href="excavator-pc50.html">
+              <div class="card">
+                <img src="assets/images/Exca pc.50.jpg" alt="" />
+                <div class="overlay">
+                  <span>Excavator PC.50</span>
+                </div>
+              </div>
+            </a>
+            <p>Excavator PC 50</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="call-to-action">
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
-            <h2>Looking to Work On A Project ?</h2>
+            <h2>Hire us to Work on a Project?</h2>
           </div>
           <div class="col-lg-4">
             <div class="white-button">
-              <a href="#">Hubungi Sekarang</a>
+              <a href="contact.html">Hubungi Sekarang</a>
             </div>
           </div>
         </div>
@@ -347,9 +404,33 @@
       setTimeout(function () {
         $(".loader").fadeToggle();
       }, 1500);
+
       $("a[href='#top']").click(function () {
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
+      });
+
+      $(".owl-what-they-say").owlCarousel({
+        items: 2,
+        loop: true,
+        dots: false,
+        nav: false,
+        autoplay: true,
+        margin: 30,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          767: {
+            items: 1,
+          },
+          1200: {
+            items: 2,
+          },
+          1600: {
+            items: 2,
+          },
+        },
       });
     </script>
   </body>
