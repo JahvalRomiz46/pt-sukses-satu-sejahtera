@@ -1099,10 +1099,6 @@ section.interior-design .right-content .accordion-body {
   display: flex;
 }
 
-section.trending-page .card {
-  border: none;
-}
-
 @media (min-width: 650px) {
   section.trending-page .grid-item {
     width: 100%;
