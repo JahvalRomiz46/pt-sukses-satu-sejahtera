@@ -126,10 +126,22 @@ section {
 }
 
 .top-content img {
-  margin-bottom: 30px;
+  width: 550px;
+  margin-right: 30px;
+  margin-bottom: 8px;
+  float: left;
+}
+
+@media (max-width: 768) {
+  .top-content {
+    width: max-content;
+  }
 }
 
 .bot-content p {
+  /* line-height: 1.2; */
+  margin-bottom: 10px;
+  letter-spacing: 0.5;
   color: #7a7a7a;
   text-align: justify;
 }
@@ -667,6 +679,11 @@ footer .sub-footer a.scroll-to-top:hover {
   flex-direction: column;
 }
 
+.HE p {
+  color: #151515;
+  font-weight: 500;
+}
+
 #exca50 {
   margin: 0 50px;
 }
@@ -873,7 +890,7 @@ footer .sub-footer a.scroll-to-top:hover {
 }
 
 .services .service-item h3 {
-  margin-top: 20px;
+  margin: 20px 0 0 0;
   font-size: 35px;
   font-weight: 700;
 }
