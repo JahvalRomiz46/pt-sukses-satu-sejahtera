@@ -121,8 +121,6 @@ section {
   color: #151515;
   line-height: 32px;
   letter-spacing: -0.5px;
-  border-left: 6px solid #e7373c;
-  padding-left: 10px;
 }
 
 .top-content {
@@ -133,12 +131,11 @@ section {
   margin-bottom: 10px;
   letter-spacing: 0.5;
   color: #7a7a7a;
-  text-align: justify;
 }
 
 @media (min-width: 576px) {
   .section-heading h2 {
-    font-size: 34px;
+    font-size: 30px;
     line-height: 48px;
     text-transform: uppercase;
     letter-spacing: auto;
@@ -296,9 +293,7 @@ header.nav-scrolled .main-navigation .navbar-nav .nav-item .active {
 @media (min-width: 992px) {
   .navbar-light .navbar-nav .nav-item .active {
     background-color: #ffffff;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    border-top: 2px solid #e7373c;
+    border-radius: 7px;
   }
 }
 
@@ -309,6 +304,23 @@ header.nav-scrolled .main-navigation .navbar-nav .nav-item .active {
 button:focus:not(:focus-visible) {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+section .keunggulan {
+  padding: 0 7%;
+}
+.keunggulan .container .left-content div {
+  padding-left: 10px;
+}
+
+.keunggulan .container .left-content div p {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 991px) {
+  .keunggulan .container .right-content img {
+    margin-top: 25px;
+  }
 }
 
 .clients {
@@ -609,9 +621,6 @@ footer .sub-footer a.scroll-to-top:hover {
 .page-banner h2 em {
   font-style: normal;
   color: #e7373c;
-  /* background-image: linear-gradient(180deg, #e7373c, #ff5100);
-  background-clip: text;
-  color: transparent; */
 }
 .page-banner p {
   color: #ffffff;
@@ -632,17 +641,10 @@ footer .sub-footer a.scroll-to-top:hover {
   color: #151515;
   font-size: 34px;
   font-weight: 700;
-  /* text-transform: uppercase; */
   margin-top: 15px;
   margin-bottom: 25px;
   letter-spacing: 0;
 }
-
-/* @media (min-width: 768px) {
-  .bisnis h2 {
-    font-size: 50px;
-  }
-} */
 
 .product-row {
   display: flex;
@@ -751,12 +753,6 @@ footer .sub-footer a.scroll-to-top:hover {
   margin-top: 15px;
   margin-bottom: 25px;
 }
-
-/* @media (min-width: 768px) {
-  .other-banner h2 {
-    font-size: 50px;
-  }
-} */
 
 .other-banner h2 em {
   font-style: normal;
@@ -890,7 +886,6 @@ footer .sub-footer a.scroll-to-top:hover {
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
-  /* margin: 0px 0px 20px 0px; */
   text-align: center;
 }
 
@@ -1161,4 +1156,3 @@ section.contact-us-page .right-info ul li span {
   font-size: 15px;
   color: #ffffff;
 }
-/*# sourceMappingURL=style.css.map */
