@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
 
-    <title>Proyek - PT Sukses Satu Sejahtera</title>
+    <title>Forklift 3T</title>
     <link rel="icon" type="image/png" href="assets/images/s1s-logo.png" />
 
     <!-- Bootstrap core CSS -->
@@ -149,13 +149,13 @@
                 <a class="nav-link" href="index.html">Tentang</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="bisnis.html">Bisnis</a>
+                <a class="nav-link active" href="bisnis.html">Bisnis</a>
               </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="proyek.html">Proyek</a>
+              </li> -->
               <li class="nav-item">
-                <a class="nav-link active" href="proyek.html">Proyek</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="galeri.html">Galeri</a>
+                <a class="nav-link" href="index.html">Gallery</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Kontak</a>
@@ -171,7 +171,7 @@
         <div class="row">
           <div class="col-lg-6 offset-lg-3">
             <div class="header-text">
-              <h2><em>Explore</em> Our Work</h2>
+              <h2 id="exca">Forklift 3T</h2>
             </div>
           </div>
         </div>
@@ -180,17 +180,38 @@
 
     <!-- CONTENT -->
 
+    <section class="exca-75">
+      <div class="previous-page">
+        <p><a href="bisnis.html">Bisnis</a> > Forklift 3T</p>
+      </div>
+
+      <h2 class="header-title">Forklift 3T</h2>
+      <div class="unit">
+        <h3>Daftar Unit</h3>
+        <ol>
+          <li>
+            <p>Kobelco - 2 Unit</p>
+          </li>
+        </ol>
+      </div>
+      <div class="content-exca75">
+        <div class="image">
+          <img src="assets/images/Forklift 3T.jpg" alt="Forklift 3T" />
+        </div>
+      </div>
+    </section>
+
     <!-- END -->
 
     <section class="call-to-action">
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
-            <h2>Ingin Mengerjakan Sebuah Proyek?</h2>
+            <h2>Tertarik berbisnis dengan kami?</h2>
           </div>
           <div class="col-lg-4">
             <div class="hubungi-button">
-              <a href="#">Hubungi Sekarang</a>
+              <a href="contact.html">Hubungi Sekarang</a>
             </div>
           </div>
         </div>
@@ -335,9 +356,33 @@
       setTimeout(function () {
         $(".loader").fadeToggle();
       }, 1500);
+
       $("a[href='#top']").click(function () {
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
+      });
+
+      $(".owl-what-they-say").owlCarousel({
+        items: 2,
+        loop: true,
+        dots: false,
+        nav: false,
+        autoplay: true,
+        margin: 30,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          767: {
+            items: 1,
+          },
+          1200: {
+            items: 2,
+          },
+          1600: {
+            items: 2,
+          },
+        },
       });
     </script>
   </body>

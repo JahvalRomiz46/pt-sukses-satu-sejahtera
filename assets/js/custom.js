@@ -2,14 +2,14 @@ const header = document.querySelector("header");
 const sectionOne = document.querySelector(".change-name");
 
 const sectionOneOptions = {
-  rootMargin: "-200px 0px 0px 0px"
+  rootMargin: "-200px 0px 0px 0px",
 };
 
-const sectionOneObserver = new IntersectionObserver(function(
+const sectionOneObserver = new IntersectionObserver(function (
   entries,
   sectionOneObserver
 ) {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (!entry.isIntersecting) {
       header.classList.add("nav-scrolled");
     } else {
