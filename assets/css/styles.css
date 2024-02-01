@@ -764,8 +764,8 @@ footer .sub-footer a.scroll-to-top:hover {
   }
 }
 
-.bisnis {
-  padding: 0px 7%;
+.produk {
+  /* padding: 0px 7%; */
 }
 
 .header-text {
@@ -867,7 +867,6 @@ footer .sub-footer a.scroll-to-top:hover {
   background-size: cover;
   background-position: center center;
   padding: 100px 0px 90px 0px;
-  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -899,11 +898,6 @@ footer .sub-footer a.scroll-to-top:hover {
   font-weight: 500;
   font-size: 40px;
   text-transform: capitalize;
-}
-
-.exca-75 {
-  margin-top: 40px;
-  padding: 0 7%;
 }
 
 .previous-page {
@@ -1014,8 +1008,14 @@ footer .sub-footer a.scroll-to-top:hover {
 }
 
 .call-to-action a {
-  color: #e7373c;
-  background-color: none;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #fff;
+  padding: 12px 8px;
+  background-color: #e7373c;
+  border-radius: 7px;
+
+  transition: all 0.5s;
 }
 
 .call-to-action a:hover {
@@ -1031,10 +1031,8 @@ footer .sub-footer a.scroll-to-top:hover {
 
   .call-to-action a {
     color: #fff;
-    transition: all 0.5s;
     padding: 20px 10px;
     background-color: #e7373c;
-    border-radius: 7px;
   }
   .call-to-action a:hover {
     color: #e7373c;
@@ -1062,6 +1060,13 @@ footer .sub-footer a.scroll-to-top:hover {
 
 .hubungi-button {
   display: flex;
+  /* justify-content: center; */
+}
+
+@media (max-width: 992px) {
+  .hubungi-button {
+    justify-content: center;
+  }
 }
 
 @media (min-width: 650px) {
