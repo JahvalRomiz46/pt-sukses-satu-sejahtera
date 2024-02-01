@@ -90,12 +90,12 @@ button.main-button:hover {
 
 section {
   margin-top: 00px;
-  padding-top: 60px;
+  padding-top: 45px;
 }
 
 @media (min-width: 576px) {
   section {
-    margin-top: 40px;
+    margin-top: 30px;
     padding-top: 30px;
   }
 }
@@ -308,6 +308,87 @@ button:focus:not(:focus-visible) {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
+/* SLIDER */
+.slider {
+  display: flex;
+  flex-direction: row;
+}
+
+.slider div img {
+  width: 400px;
+}
+
+.hmove {
+  display: flex;
+}
+.hslide {
+  width: 100%;
+  flex-shrink: 0;
+  text-align: center;
+}
+.hwrap {
+  /* width: 400px; */
+  padding: 30px 0;
+  overflow: hidden;
+  border-top: 1px solid #7a7a7a44;
+  border-bottom: 1px solid #7a7a7a44;
+}
+
+/* (B) SHIFT SLIDES WITH CSS ANIMATION */
+/* (B1) SLIDES POSITION */
+.hmove {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.hmove h3 {
+  font-size: 20px;
+}
+
+.hmove p {
+  margin-bottom: 0;
+}
+
+@keyframes slideh {
+  0% {
+    right: 0;
+  }
+  24% {
+    right: 0;
+  }
+  25% {
+    right: 100%;
+  }
+  49% {
+    right: 100%;
+  }
+  50% {
+    right: 200%;
+  }
+  74% {
+    right: 200%;
+  }
+  75% {
+    right: 300%;
+  }
+  99% {
+    right: 300%;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+/* (B2) MOVE SLIDES */
+.hmove {
+  animation: slideh 30s infinite;
+}
+.hmove:hover {
+  animation-play-state: paused;
+}
+/* SLIDER */
 
 .visi-misi {
   display: flex;
@@ -726,9 +807,9 @@ footer .sub-footer a.scroll-to-top:hover {
 }
 
 @media (max-width: 812px) {
-  /* .product-row {
+  .product-row {
     justify-content: center;
-  } */
+  }
 }
 
 @media (max-width: 512px) {
