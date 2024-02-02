@@ -1054,8 +1054,9 @@ footer .sub-footer a.scroll-to-top:hover {
 }
 
 .white-button a:hover {
-  color: #fff;
-  background-color: #e7373c;
+  border: none;
+  color: #e7373c;
+  background-color: #fff;
 }
 
 .hubungi-button {
